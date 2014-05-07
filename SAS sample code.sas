@@ -2,7 +2,6 @@
 
 libname sca 'C:\Users\edwin\Desktop\SCA_data';
 
-/*when phline=0 then use # of cellphone*/
 /* keep subset of dataset */
 data smp2012_1;
 set sca.smp2012;
@@ -47,9 +46,5 @@ value age 1 = "18-24"
 			  6 = "65+";
 run;
 
-ods html file= "&path\sca_demographics.html";
-proc freq data=smp2012_2;
-tables race*sex*age/missing list;
-run;
 
 
