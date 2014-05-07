@@ -2,7 +2,7 @@
 
 libname sca 'C:\Users\edwin\Desktop\SCA_data';
 
-/*hwhen phline=0 then use # of cellphone*/
+/*when phline=0 then use # of cellphone*/
 /* keep subset of dataset */
 data smp2012_1;
 set sca.smp2012;
